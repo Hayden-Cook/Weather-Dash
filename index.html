@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dash</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <section id="search">
+            <input type="text" id="search-bar" placeholder="Enter City Name">
+            <button id="search-button">Search</button>
+        </section>
+        <section id="current-weather">
+            <h2>Current Weather</h2>
+            <div id="current-weather-content">
+                <p id="city-name">City Name</p>
+                <p id="current-date">Date</p>
+                <p id="current-temp">Temperature</p>
+                <p id="current-humidity">Humidity</p>
+                <p id="current-wind-speed">Wind Speed</p>
+                <p id="current-uv-index">UV Index</p>
+            </div>
+        </section>
+        <section id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-content">
+                <div class="forecast-day">
+                    <p class="forecast-date">Date</p>
+                    <p class="forecast-temp">Temperature</p>
+                    <p class="forecast-humidity">Humidity</p>
+                </div>
+        <section id="history-section">
+            <h2>Search History</h2>
+            <div id="history-content">
+                <p>City Name</p>
+            </div>
+        </section>
+    </main>
+    <script src="http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=7e7a5831fdc2f2cc70d38b8284d76c8b"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
+
+<!--https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=7e7a5831fdc2f2cc70d38b8284d76c8b-->
+
+<!--https://api.openweathermap.org/data/2.5/weather?cityname=Austin&appid=7e7a5831fdc2f2cc70d38b8284d76c8b-->
