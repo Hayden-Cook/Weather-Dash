@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #3c3b6e, #2a2b5e);
+    color: #333;
+}
+
+header {
+    background: #4e4ca1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1050px;
+    margin: 2rem auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Section */
+#search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+#search-section h2 {
+    margin-bottom: 0.5rem;
+}
+
+#search-section input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-section button {
+    padding: 0.5rem 1rem;
+    background: #4e4ca1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+#search-section button:hover {
+    background: #3c3b6e;
+}
+
+#searchHistory button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    background: #ccc;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+#searchHistory button:hover {
+    background: #bbb;
+}
+
+/* Current Weather Section */
+#current-weather {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#current-weather h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#current-weather img {
+    width: 40px;
+    height: 40px;
+}
+
+/* 5-Day Forecast Section */
+#forecast-section {
+    margin-bottom: 2rem;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    border: 1px solid #ddd;
+    background: #4e4ca1;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.forecast-card img {
+    width: 40px;
+    height: 40px;
+}

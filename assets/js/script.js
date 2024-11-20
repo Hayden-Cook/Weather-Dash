@@ -1,7 +1,7 @@
 const keyAPI = '7e7a5831fdc2f2cc70d38b8284d76c8b'
 
 $(document).ready(function () {
-    $("searchButton").on("click", function () {
+    $("#searchButton").on("click", function () {
         let city = $("#cityInput").val().trim();
         if (city) {
             getCoordinates(city);
@@ -35,7 +35,6 @@ const getWeather = (lat, lon, city) => {
         displayCurrentWeather(data, city);
         displayForecast(data);
         saveCityToLocalStorage(city);
-        updateSearchHistory(city);
     })
     .fail(() => {
         alert("Error fetching weather data. Please try again.");
@@ -57,15 +56,15 @@ const displayForecast = (data) => {
     const forecastContainer = $("#forecast");
     forecastContainer.empty();
 
-    for (let i = 1; i < data.list.length; i+=8) {
+    for (let i = 1; i < data.list.length; i += 8) {
         const forecast = data.list[i];
         forecastContainer.append(`
             <div class="forecast-card">
-                    <h3>${new Date(day.dt_txt).toLocaleDateString()}</h3>
+                    <h3>${new Date(forecast.dt_txt).toLocaleDateString()}</h3>
                     <img src="https://openweathermap.org/img/w/${forecast.weather[0].icon}.png" alt="${forecast.weather[0].description}">
-                    <p>Temp.: ${day.main.temp} °F</p>
-                    <p>Humidity: ${day.main.humidity}%</p>
-                    <p>Wind Speed: ${day.wind.speed} MPH</p>
+                    <p>Temp.: ${forecast.main.temp} °F</p>
+                    <p>Humidity: ${forecast.main.humidity}%</p>
+                    <p>Wind Speed: ${forecast.wind.speed} MPH</p>
             </div>
         `);
     }
