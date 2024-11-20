@@ -7,6 +7,7 @@ This week, I built a weather dashboard that operates in the browser. This app co
 The user can open this in their browser and begin to search for a city. If they need to go back to a previous search, they can use the history section to pull the data up again.
 
 ## Screenshot
+![Screenshot](https://github.com/Hayden-Cook/Weather-Dash/blob/main/assets/images/_C__Users_hcsoc_bootcamp_Weather-Dash_index.html.png)
 
 ## Deployed URL
 
